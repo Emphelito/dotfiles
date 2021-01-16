@@ -1,0 +1,232 @@
+;==========================================================
+;
+;             ███████╗██╗  ██╗
+;             ██╔════╝██║  ██║
+;             █████╗  ███████║
+;             ██╔══╝  ██╔══██║
+;             ███████╗██║  ██║
+;             ╚══════╝╚═╝  ╚═╝
+;
+;==========================================================
+
+[colors]
+;background = ${xrdb:color0:#222}
+background = #222
+background-alt = #444
+;foreground = ${xrdb:color7:#222}
+foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+;My own colors
+myRed = #b30047
+myTurq = #33ccff
+myYel = #ffcc00
+myGrey = #232627
+myBlue = #3333ff
+myWhite = #fcfcfc 
+
+[bar/Main]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 25
+;offset-x = 5%
+;offset-y = 0%
+radius = 0 
+fixed-center = false
+
+enable-ipc = false
+
+background = ${colors.myGrey}
+foreground = ${colors.foreground}
+
+line-size = 5
+line-color = #f00
+
+border-size = 0 
+border-color = #1abc9c
+
+padding-left = 0
+padding-right = 0 
+
+module-margin-left = 0
+module-margin-right = 1 
+
+font-0 = JetBrains Mono:pixelsize=13;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+
+modules-left = ewmh xwindow
+modules-center = 
+modules-right = pac-updates xkeyboard time date powermenu 
+
+tray-position = right
+tray-padding = 1 
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/ewmh]
+type = internal/xworkspaces
+
+pin-workspaces = false
+enable-click = true
+enable-scroll = false
+
+format = <label-state>
+label-monitor = %name%
+label-monitor-underline = #b30047
+
+label-active = %name%
+label-active-foreground = #ffcc00
+label-active-background = #313533
+;label-active-underline = #6600ff
+label-active-padding = 1 
+
+label-occupied = %name%
+;label-occupied = %{F#ffcc00}*%{F-}%{F#b30047}%name%%{F-}
+label-occupied-foreground = #ffcc00
+;label-occupied-underline = #6600ff
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-foreground = #ffcc00
+;label-urgent-underline = #6600ff
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-foreground = ${colors.myRed}
+;label-empty-underline = #6600ff
+label-empty-padding = 1
+
+[module/xwindow]
+type = internal/xwindow
+label =%{F#fcfcfc}%title:0:30:...%%{F-}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+;format-prefix = " "
+;format-prefix-foreground = ${colors.foreground-alt}
+;format-prefix-underline = ${colors.secondary}
+
+label-layout = %layout%
+label-layout-underline = ${colors.myRed}
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+
+label-song-maxlen = 25
+label-song-ellipsis = true
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = "%d-%m/%Y"
+
+format-underline = ${colors.myRed}
+
+label = %date%
+
+[module/time]
+type = internal/date
+interval = 5
+
+time = %H:%M
+
+format-underline = ${colors.myRed}
+
+label = %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume> <bar-volume>
+label-volume = VOL %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted = 🔇 muted
+label-muted-foreground = #666
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = false
+
+label-open = "  ⏻  "
+label-close = ">>  "
+format-background = #313533
+label-open-foreground = ${colors.myYel}
+label-close-foreground = ${colors.myYel}
+
+menu-0-0 = "  ⏻"
+menu-0-0-exec = poweroff
+menu-0-1 = ⭘
+menu-0-1-exec = reboot
+menu-0-2 = ⏼
+menu-0-2-exec = killall xinit || logout
+
+format-padding = 0
+format-spacing = 2
+
+[module/start]
+type = custom/text
+content ="  €  "
+
+content-background = #313533
+content-foreground = ${colors.myYel}
+
+click-left = rofi & 
+
+[module/pac-updates]
+type = custom/script
+exec = ~/.local/bin/pacupdate.sh
+interval = 1000
+
+label = Pac %output%
+format-foreground = ${colors.myWhite}
+format-underline = ${colors.myYel}
+format-padding = 0
+format-margin = 1
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini

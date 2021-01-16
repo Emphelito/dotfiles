@@ -1,0 +1,12 @@
+#!/bin/sh
+[ -x "$(command -v nvim)" ] && alias vim="nvim"
+
+alias \
+        vix="vim ~/.xmonad/xmonad.hs" \
+        vik="vim ~/.config/kitty/kitty.conf" \
+	vip="vim ~/.config/polybar/config" 
+
+alias \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	f="$FILE"

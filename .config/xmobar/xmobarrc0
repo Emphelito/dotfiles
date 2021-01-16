@@ -1,0 +1,36 @@
+Config { font = "xft:FiraCode-Retina:size=12:antialias=true:hinting=true"
+       , additionalFonts = []
+       , bgColor = "#232627"
+       , fgColor = "#fcfcfc"
+       , position = TopSize C 100 5
+       , lowerOnStart = True
+       , persistent = True
+       , hideOnStart = False
+       , iconRoot = "/home/emph/.xmonad/xpm/" --def "."
+       , allDesktops = True
+       , commands = [ Run Weather "ESSB" ["-t","Stockholm: <tempC>C",
+                                          "-L","18","-H","25",
+                                          "--normal","green",
+                                          "--high","red",
+                                          "--low","lightblue"] 36000
+                    , Run Network "enp0s3" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+                    , Run Network "eth1" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+                    , Run Cpu ["-L","3","-H","50",
+                               "--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Swap [] 10
+                    , Run DiskU [("/", "<fc=#ffcc00>Disk: <used>/<size></fc>")]
+                                ["-L", "20", "-H", "50", "-m", "1", "-p", "3"] 60
+                    , Run Com "uname" ["-r"] "" 36000
+                    , Run Date "<fc=#33ccff>%b %_d %H:%M</fc>" "date" 10
+		    , Run Com ".local/bin/pacupdate.sh" [] "pacu"36000
+                      --Workspaces
+                    , Run UnsafeStdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " <icon=eh-xpm.xpm/> %UnsafeStdinReader% }{<fc=#33ccff>%pacu%</fc> <fc=#666666>|</fc> %uname% <fc=#666666>|</fc> %disku% <fc=#666666>|</fc> %enp0s3% <fc=#666666>|</fc> <fc=#33ccff>%date%</fc> "
+
+       }
