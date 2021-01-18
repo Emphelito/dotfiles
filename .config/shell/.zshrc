@@ -21,4 +21,4 @@ PROMPT='%F{#6600ff}[%F{#b30047}%n%F{#6600ff}@%F{#33ccff}%m%f %F{#fcfcfc}%B%~%b%f
 RPROMPT='%F{#b30047}[%&%F{#33ccff}]%F{fcfcfc}'
 
 clear
-neofetch
+#neofetch

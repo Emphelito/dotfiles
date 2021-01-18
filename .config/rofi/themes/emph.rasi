@@ -1,14 +1,38 @@
 * {
+	myRed:				#b30047;
+	myTurq:				#33ccff;
+	myYel:				#ffcc00;
+	myGrey:				#232627;
+	myBlue:				#3333ff;
+	myGreen:			#66ff66;
+	myWhite:			#fcfcfc;
+	
+	myaltRed:			#ab1044;
+	myaltTurq:			#00cc99;
+	
+	myaltGrey:			#313533;
+	my2latGrey:			#303436;
+
+
 	background-color:		#232627;
-	border-color:			#b30047;
+	border-color:			@myRed;
 	text-color:			#fcfcfc;
-	font:				"JetBrains Mono Medium 9";
-	alternate-background:		#313533;
+	
+	alternate-normal-background:	@myGrey;
+	alternate-normal-foreground:	#ffffff;
+	alternate-background:		@myGrey;
+	alternate-foreground:           #b30047;
+	
+	selected-normal-background:	@myaltGrey;
+	selected-normal-foreground:	@border-color;
+	
 	spacing:			3;
+	font:				"Fira Code Retina 12";
 }
 #window {
 	border: 1;
 	padding: 5;
+	width: 700;
 }
 #mainbox {
 	border: 0;
@@ -17,6 +41,7 @@
 #listview {
 	fixed-height: 0;
 	border: 2px dash 0px 0px ;
+	border-color: @my2altGrey;
 	spacing: 2px ;
 	scrollbar: true;
 	padding: 2px 0px 0px ;
@@ -40,7 +65,7 @@
     padding:      0;
 }
 #sidebar {
-    border: 2px dash 0px 0px ;
+    border: 0px dash 0px 0px ;
 }
 #button.selected {
     background-color: @selected-normal-background;

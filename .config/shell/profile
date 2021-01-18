@@ -3,7 +3,11 @@
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="kitty"
-export BROWSER="Firefox"
+export BROWSER="Brave"
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
 
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/shell"
-export XMONAD="${XDG_CONFIG_HOME:-$HOME/.config/xmonad}/.xmonad"
+export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/x11"

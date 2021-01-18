@@ -1,0 +1,6 @@
+2021/01/18-00:42:37.343 47b Reusing MANIFEST /home/emph/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/01/18-00:42:37.343 47b Recovering log #3
+2021/01/18-00:42:37.344 47b Reusing old log /home/emph/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000003.log 
+2021/01/18-01:13:39.757 cad Level-0 table #5: started
+2021/01/18-01:13:39.760 cad Level-0 table #5: 92881 bytes OK
+2021/01/18-01:13:39.761 cad Delete type=0 #3
