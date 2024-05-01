@@ -81,6 +81,22 @@ class weather extends Service {
                     this.#Icon = "weather-overcast-symbolic";
                     break;
                 }
+                case "09d": {
+                    this.#Icon = "weather-showers-symbolic"
+                    break;
+                }
+                case "09n": {
+                    this.#Icon = "weather-showers-symbolic"
+                    break;
+                }
+                case "10d": {
+                    this.#Icon = "weather-showers-scattered-symbolic"
+                    break;
+                }
+                case "10n": {
+                    this.#Icon = "weather-showers-scattered-symbolic"
+                    break;
+                }
 
             }
 

@@ -108,11 +108,11 @@ button {
   border-radius: 10px; }
 
 .datemenu .clock {
-  background-color: #181825;
+  background-color: #1e1e2e;
   border-radius: 10px; }
 
 .datemenu .calendar {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 10px;
   border-radius: 10px; }
 
@@ -126,12 +126,12 @@ button {
   background-color: #1e1e2e; }
 
 .datemenu .notifications {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 10px;
   border-radius: 10px; }
 
 .datemenu .notification-label {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 10px;
   font-size: 20;
   border-radius: 10px; }
@@ -169,13 +169,13 @@ button {
   border-radius: 10px; }
 
 .datemenu .notification button {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 5px;
   border-color: transparent;
   border-radius: 10px; }
 
 .datemenu .notification button:hover {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 5px;
   border-color: #cdd6f4;
   border-radius: 10px; }
@@ -227,8 +227,7 @@ window.powermenu {
   padding: 20px; }
 
 .qs-header {
-  padding: 10px;
-  background-color: #181825;
+  background-color: transparent;
   border-radius: 20px; }
 
 .qs-avatar {
@@ -243,7 +242,7 @@ window.powermenu {
   border-radius: 10px; }
 
 .qs-cluster {
-  background-color: #181825;
+  background-color: transparent;
   border-radius: 10px; }
 
 .qs-cluster .toggle-cluster button {
@@ -263,7 +262,7 @@ window.powermenu {
   background-color: transparent; }
 
 .qs-sliders {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 10px;
   border-radius: 10px; }
 
@@ -286,12 +285,12 @@ window.powermenu {
   min-width: 0px; }
 
 .qs-player {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 10px;
   border-radius: 10px; }
 
 .qs-player button {
-  background-color: #1e1e2e;
+  background-color: transparent;
   padding: 5px 10px 5px 10px;
   border-color: transparent;
   border-radius: 10px;
@@ -301,6 +300,6 @@ window.powermenu {
   border-radius: 10px; }
 
 .qs-weather {
-  background-color: #181825;
+  background-color: #1e1e2e;
   padding: 10px;
   border-radius: 10px; }

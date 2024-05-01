@@ -14,9 +14,8 @@ window.powermenu {
 }
 
 .qs-header {
-	padding: 10px;
-    background-color: $mantle;
-
+    background-color: transparent;
+    
 	border-radius: 20px;
 }
 
@@ -37,7 +36,7 @@ window.powermenu {
 }
 
 .qs-cluster {
-	background-color: $mantle;
+	background-color: transparent;
 
 	border-radius: 10px;
 
@@ -67,7 +66,7 @@ window.powermenu {
 }
 
 .qs-sliders {
-	background-color: $mantle;
+	background-color: $base;
 	padding: 10px;
 	border-radius: 10px;
 
@@ -99,7 +98,7 @@ window.powermenu {
 }
 
 .qs-player {
-	background-color: $mantle;
+	background-color: $base;
 
 	padding: 10px;
 	
@@ -107,7 +106,7 @@ window.powermenu {
 }
 
 .qs-player button {
-    background-color: $base;
+    background-color: transparent;
 	
 	padding: 5px 10px 5px 10px;
 
@@ -121,7 +120,7 @@ window.powermenu {
 }
 
 .qs-weather {
-    background-color: $mantle;
+    background-color: $base;
     
     padding: 10px;
 

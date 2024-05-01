@@ -105,7 +105,7 @@ const dnd = n.bind("dnd")
 
 export const DNDToggle = () => Widget.Button({
 	child: Widget.Icon({
-    		icon: dnd.as(dnd => dnd ? "notification-symbolic" : "notification-disabled-symbolic"),
+    		icon: dnd.as(dnd => dnd ? "notification-disabled-symbolic" : "notification-symbolic"),
 		size: iconSize,
 	}),
     	on_clicked: () => n.dnd = !n.dnd,

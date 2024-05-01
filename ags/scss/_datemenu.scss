@@ -7,13 +7,13 @@
 }
 
 .datemenu .clock {
-    background-color: $mantle;
+    background-color: $base;
 
     border-radius: 10px;
 }
 
 .datemenu .calendar {
-    background-color: $mantle;
+    background-color: $base;
 
     padding: 10px;
 
@@ -33,7 +33,7 @@
 }
 
 .datemenu .notifications {
-    background-color: $mantle;
+    background-color: $base;
 
     padding:10px;
 
@@ -41,7 +41,7 @@
 }
 
 .datemenu .notification-label {
-    background-color: $mantle;
+    background-color: $base;
 
     padding:10px;
     
@@ -98,7 +98,7 @@
 }
 
 .datemenu .notification button {
-    background-color: $mantle;
+    background-color: $base;
     
     padding:5px;
     
@@ -107,7 +107,7 @@
 }
 
 .datemenu .notification button:hover {
-    background-color: $mantle;
+    background-color: $base;
     
     padding:5px;
     

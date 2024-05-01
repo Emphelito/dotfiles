@@ -30,8 +30,8 @@ const NetworkIndicator = () => Widget.Icon().hook(network, self => {
 })
 
 const DND = () => Widget.Icon({
-    icon: dnd.as(dnd => dnd ? "user-online" : "user-busy"),
-    visible: dnd.as(dnd => dnd ? false : true),
+    icon: dnd.as(dnd => dnd ? "notification-disabled-symbolic" : "notification-symbolic"),
+    visible: dnd.as(dnd => dnd ? true : false),
 })
 
 const SysIndicators = () => Widget.Box({
