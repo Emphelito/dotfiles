@@ -1,0 +1,54 @@
+{"colors":{"dark":{"background":"#19120c","error":"#ffb4ab","error_container":"#93000a","inverse_on_surface":"#372f28","inverse_primary":"#87521b","inverse_surface":"#efe0d5","on_background":"#efe0d5","on_error":"#690005","on_error_container":"#ffdad6","on_primary":"#4b2700","on_primary_container":"#ffdcc0","on_primary_fixed":"#2d1600","on_primary_fixed_variant":"#6b3b03","on_secondary":"#412c19","on_secondary_container":"#ffdcc0","on_secondary_fixed":"#291806","on_secondary_fixed_variant":"#5a422d","on_surface":"#efe0d5","on_surface_variant":"#d5c3b6","on_tertiary":"#2c340e","on_tertiary_container":"#dee8b2","on_tertiary_fixed":"#181e00","on_tertiary_fixed_variant":"#424a23","outline":"#9e8e82","outline_variant":"#51443a","primary":"#feb877","primary_container":"#6b3b03","primary_fixed":"#ffdcc0","primary_fixed_dim":"#feb877","scrim":"#000000","secondary":"#e2c0a5","secondary_container":"#e2c0a5","secondary_fixed":"#ffdcc0","secondary_fixed_dim":"#e2c0a5","shadow":"#000000","surface":"#19120c","surface_bright":"#413730","surface_container":"#261e18","surface_container_high":"#312822","surface_container_highest":"#3c332c","surface_container_low":"#221a14","surface_container_lowest":"#130d07","surface_dim":"#19120c","surface_variant":"#51443a","tertiary":"#c2cb98","tertiary_container":"#424a23","tertiary_fixed":"#dee8b2","tertiary_fixed_dim":"#c2cb98"},"light":{"background":"#fff8f5","error":"#ba1a1a","error_container":"#ffdad6","inverse_on_surface":"#feeee3","inverse_primary":"#feb877","inverse_surface":"#372f28","on_background":"#221a14","on_error":"#ffffff","on_error_container":"#410002","on_primary":"#ffffff","on_primary_container":"#2d1600","on_primary_fixed":"#2d1600","on_primary_fixed_variant":"#6b3b03","on_secondary":"#ffffff","on_secondary_container":"#291806","on_secondary_fixed":"#291806","on_secondary_fixed_variant":"#5a422d","on_surface":"#221a14","on_surface_variant":"#51443a","on_tertiary":"#ffffff","on_tertiary_container":"#181e00","on_tertiary_fixed":"#181e00","on_tertiary_fixed_variant":"#424a23","outline":"#837469","outline_variant":"#d5c3b6","primary":"#87521b","primary_container":"#ffdcc0","primary_fixed":"#ffdcc0","primary_fixed_dim":"#feb877","scrim":"#000000","secondary":"#735943","secondary_container":"#735943","secondary_fixed":"#ffdcc0","secondary_fixed_dim":"#e2c0a5","shadow":"#000000","source_color":"#f3bd8e","surface":"#fff8f5","surface_bright":"#fff8f5","surface_container":"#fbebe0","surface_container_high":"#f5e5db","surface_container_highest":"#efe0d5","surface_container_low":"#fff1e8","surface_container_lowest":"#ffffff","surface_dim":"#e6d7cd","surface_variant":"#f2dfd1","tertiary":"#5a6238","tertiary_container":"#dee8b2","tertiary_fixed":"#dee8b2","tertiary_fixed_dim":"#c2cb98"}},"harmonized_colors":{}}
+╭────────────────────────────┬─────────┬───────┬─────────┬──────╮
+│            NAME            │  LIGHT  │ LIGHT │  DARK   │ DARK │
+├────────────────────────────┼─────────┼───────┼─────────┼──────┤
+│ primary                    │ #904A45 │  [37;48;2;144;74;69m  [0m   │ #FFB3AD │  [30;48;2;255;179;173m  [0m  │
+│ on_primary                 │ #FFFFFF │  [30;48;2;255;255;255m  [0m   │ #571E1B │  [37;48;2;87;30;27m  [0m  │
+│ primary_container          │ #FFDAD6 │  [30;48;2;255;218;214m  [0m   │ #73332F │  [37;48;2;115;51;47m  [0m  │
+│ on_primary_container       │ #3B0908 │  [37;48;2;59;9;8m  [0m   │ #FFDAD6 │  [30;48;2;255;218;214m  [0m  │
+│ inverse_primary            │ #FFB3AD │  [30;48;2;255;179;173m  [0m   │ #904A45 │  [37;48;2;144;74;69m  [0m  │
+│ primary_fixed              │ #FFDAD6 │  [30;48;2;255;218;214m  [0m   │ #FFDAD6 │  [30;48;2;255;218;214m  [0m  │
+│ primary_fixed_dim          │ #FFB3AD │  [30;48;2;255;179;173m  [0m   │ #FFB3AD │  [30;48;2;255;179;173m  [0m  │
+│ on_primary_fixed           │ #3B0908 │  [37;48;2;59;9;8m  [0m   │ #3B0908 │  [37;48;2;59;9;8m  [0m  │
+│ on_primary_fixed_variant   │ #73332F │  [37;48;2;115;51;47m  [0m   │ #73332F │  [37;48;2;115;51;47m  [0m  │
+│ secondary                  │ #775653 │  [37;48;2;119;86;83m  [0m   │ #E7BDB9 │  [30;48;2;231;189;185m  [0m  │
+│ on_secondary               │ #FFFFFF │  [30;48;2;255;255;255m  [0m   │ #442927 │  [37;48;2;68;41;39m  [0m  │
+│ secondary_container        │ #775653 │  [37;48;2;119;86;83m  [0m   │ #E7BDB9 │  [30;48;2;231;189;185m  [0m  │
+│ on_secondary_container     │ #2C1513 │  [37;48;2;44;21;19m  [0m   │ #FFDAD6 │  [30;48;2;255;218;214m  [0m  │
+│ secondary_fixed            │ #FFDAD6 │  [30;48;2;255;218;214m  [0m   │ #FFDAD6 │  [30;48;2;255;218;214m  [0m  │
+│ secondary_fixed_dim        │ #E7BDB9 │  [30;48;2;231;189;185m  [0m   │ #E7BDB9 │  [30;48;2;231;189;185m  [0m  │
+│ on_secondary_fixed         │ #2C1513 │  [37;48;2;44;21;19m  [0m   │ #2C1513 │  [37;48;2;44;21;19m  [0m  │
+│ on_secondary_fixed_variant │ #5D3F3D │  [37;48;2;93;63;61m  [0m   │ #5D3F3D │  [37;48;2;93;63;61m  [0m  │
+│ tertiary                   │ #725B2E │  [37;48;2;114;91;46m  [0m   │ #E1C28C │  [30;48;2;225;194;140m  [0m  │
+│ on_tertiary                │ #FFFFFF │  [30;48;2;255;255;255m  [0m   │ #402D04 │  [37;48;2;64;45;4m  [0m  │
+│ tertiary_container         │ #FFDEA6 │  [30;48;2;255;222;166m  [0m   │ #584319 │  [37;48;2;88;67;25m  [0m  │
+│ on_tertiary_container      │ #261900 │  [37;48;2;38;25;0m  [0m   │ #FFDEA6 │  [30;48;2;255;222;166m  [0m  │
+│ tertiary_fixed             │ #FFDEA6 │  [30;48;2;255;222;166m  [0m   │ #FFDEA6 │  [30;48;2;255;222;166m  [0m  │
+│ tertiary_fixed_dim         │ #E1C28C │  [30;48;2;225;194;140m  [0m   │ #E1C28C │  [30;48;2;225;194;140m  [0m  │
+│ on_tertiary_fixed          │ #261900 │  [37;48;2;38;25;0m  [0m   │ #261900 │  [37;48;2;38;25;0m  [0m  │
+│ on_tertiary_fixed_variant  │ #584319 │  [37;48;2;88;67;25m  [0m   │ #584319 │  [37;48;2;88;67;25m  [0m  │
+│ error                      │ #BA1A1A │  [37;48;2;186;26;26m  [0m   │ #FFB4AB │  [30;48;2;255;180;171m  [0m  │
+│ on_error                   │ #FFFFFF │  [30;48;2;255;255;255m  [0m   │ #690005 │  [37;48;2;105;0;5m  [0m  │
+│ error_container            │ #FFDAD6 │  [30;48;2;255;218;214m  [0m   │ #93000A │  [37;48;2;147;0;10m  [0m  │
+│ on_error_container         │ #410002 │  [37;48;2;65;0;2m  [0m   │ #FFDAD6 │  [30;48;2;255;218;214m  [0m  │
+│ surface_dim                │ #E8D6D4 │  [30;48;2;232;214;212m  [0m   │ #1A1110 │  [37;48;2;26;17;16m  [0m  │
+│ surface                    │ #FFF8F7 │  [30;48;2;255;248;247m  [0m   │ #1A1110 │  [37;48;2;26;17;16m  [0m  │
+│ surface_bright             │ #FFF8F7 │  [30;48;2;255;248;247m  [0m   │ #423735 │  [37;48;2;66;55;53m  [0m  │
+│ surface_container_lowest   │ #FFFFFF │  [30;48;2;255;255;255m  [0m   │ #140C0B │  [37;48;2;20;12;11m  [0m  │
+│ surface_container_low      │ #FFF0EF │  [30;48;2;255;240;239m  [0m   │ #231918 │  [37;48;2;35;25;24m  [0m  │
+│ surface_container          │ #FCEAE8 │  [30;48;2;252;234;232m  [0m   │ #271D1C │  [37;48;2;39;29;28m  [0m  │
+│ surface_container_high     │ #F6E4E2 │  [30;48;2;246;228;226m  [0m   │ #322827 │  [37;48;2;50;40;39m  [0m  │
+│ surface_container_highest  │ #F1DEDC │  [30;48;2;241;222;220m  [0m   │ #3D3231 │  [37;48;2;61;50;49m  [0m  │
+│ on_surface                 │ #231918 │  [37;48;2;35;25;24m  [0m   │ #F1DEDC │  [30;48;2;241;222;220m  [0m  │
+│ on_surface_variant         │ #534342 │  [37;48;2;83;67;66m  [0m   │ #D8C2BF │  [30;48;2;216;194;191m  [0m  │
+│ outline                    │ #857371 │  [37;48;2;133;115;113m  [0m   │ #A08C8A │  [37;48;2;160;140;138m  [0m  │
+│ outline_variant            │ #D8C2BF │  [30;48;2;216;194;191m  [0m   │ #534342 │  [37;48;2;83;67;66m  [0m  │
+│ inverse_surface            │ #392E2D │  [37;48;2;57;46;45m  [0m   │ #F1DEDC │  [30;48;2;241;222;220m  [0m  │
+│ inverse_on_surface         │ #FFEDEB │  [30;48;2;255;237;235m  [0m   │ #392E2D │  [37;48;2;57;46;45m  [0m  │
+│ surface_variant            │ #F5DDDB │  [30;48;2;245;221;219m  [0m   │ #534342 │  [37;48;2;83;67;66m  [0m  │
+│ background                 │ #FFF8F7 │  [30;48;2;255;248;247m  [0m   │ #1A1110 │  [37;48;2;26;17;16m  [0m  │
+│ on_background              │ #231918 │  [37;48;2;35;25;24m  [0m   │ #F1DEDC │  [30;48;2;241;222;220m  [0m  │
+│ shadow                     │ #000000 │  [37;48;2;0;0;0m  [0m   │ #000000 │  [37;48;2;0;0;0m  [0m  │
+│ scrim                      │ #000000 │  [37;48;2;0;0;0m  [0m   │ #000000 │  [37;48;2;0;0;0m  [0m  │
+│ source_color               │ #F2655E │  [37;48;2;242;101;94m  [0m   │ #F2655E │  [37;48;2;242;101;94m  [0m  │
+╰────────────────────────────┴─────────┴───────┴─────────┴──────╯

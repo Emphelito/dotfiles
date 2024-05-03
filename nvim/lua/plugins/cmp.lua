@@ -14,6 +14,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		dependencies = {
 			"hrsh7th/cmp-cmdline",
+			"hrsh7th/cmp-buffer",
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -54,7 +55,7 @@ return {
 					{
 						name = "cmdline",
 						options = {
-							ignore_cmds = { "Man", "!" },
+							ignore_cmds = { "Man" },
 						},
 					},
 				}),

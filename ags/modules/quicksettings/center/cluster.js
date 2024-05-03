@@ -131,7 +131,7 @@ const WpSwitch = Widget.Button({
         icon: "image-x-generic-symbolic",
         size: iconSize,
     }),
-    on_clicked: () => Utils.exec('bash -c "/home/emph/.config/scripts/randwall.sh"')
+    on_clicked: () => App.toggleWindow("ThemeSettings"),
 })
 
 const ThemeSwitch = Widget.Button({

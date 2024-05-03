@@ -1,36 +1,43 @@
-const greetd = await Service.import('greetd');
+const greetd = await Service.import("greetd");
 
-const name = Widget.Entry({
-    placeholder_text: 'Username',
-    on_accept: () => password.grab_focus(),
-})
+const userName = "emph";
+
+async function login(pw) {
+    const greetd = await Service.import("greetd");
+    return greetd.login(userName, pw, "Hyprland").catch((res) => {
+        response.label = JSON.stringify(res);
+    });
+}
+const username = Widget.Label({
+    label: `${userName}`,
+});
 
 const password = Widget.Entry({
-    placeholder_text: 'Password',
-    visibility: false,
-    on_accept: () => {
-        greetd.login(name.text || '', password.text || '', 'Hyprland')
-            .catch(err => response.label = JSON.stringify(err))
+    on_accept: ({ text }) => {
+        login(text);
     },
-})
+});
 
-const response = Widget.Label()
+const response = Widget.Label();
 
 const win = Widget.Window({
-    css: 'background-color: transparent;',
-    anchor: ['top', 'left', 'right', 'bottom'],
+    css: "background-color: transparent;",
+    anchor: ["top", "left", "right", "bottom"],
+    setup: self => {
+        password.grab_focus()
+    },
     child: Widget.Box({
         vertical: true,
-        hpack: 'center',
-        vpack: 'center',
+        hpack: "center",
+        vpack: "center",
         hexpand: true,
         vexpand: true,
-        children: [
-            name,
-            password,
-            response,
+        children: [               
+                username,
+                password,
+                response,
         ],
     }),
-})
+});
 
-App.config({ windows: [win] })
+App.config({ windows: [win] });
