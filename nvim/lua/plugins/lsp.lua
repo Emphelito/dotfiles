@@ -61,6 +61,10 @@ return {
             lspconfig.texlab.setup({
                 capabilities = capabilities,
             })
+            lspconfig.rnix.setup({
+                capabilities = capabilities,
+            })
+
 
             vim.keymap.set({ "n" }, "<leader>ca", vim.lsp.buf.code_action, {})
         end,
